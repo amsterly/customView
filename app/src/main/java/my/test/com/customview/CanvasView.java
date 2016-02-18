@@ -23,6 +23,7 @@ public class CanvasView extends View {
     private Paint mPaint;
     public  Method mMethod;
     private Path mPath;
+    //000000000
 
     // 我们将使用android.graphics.Movie类来绘制GIF。
     private Movie mMovie;
