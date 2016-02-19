@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+
 public class DisplayActivity extends AppCompatActivity {
 
     private CanvasView id_canvasview;
@@ -11,6 +13,7 @@ public class DisplayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fresco.initialize(this);
         setContentView(R.layout.activity_display);
         id_canvasview = (CanvasView) findViewById(R.id.id_canvasview);
     }
